@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Lamp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <button class="mb" id = "mb" onclick="menubtn()"><img class="menu" src="images/menu.png"></button>
+        <img class="logo" src="images/logo.png" >
+
+        <ul>
+            <li>Latest</li>
+            <li>Modern</li>
+            <li>Contemporary</li>
+            <li>Affordable</li>
+        </ul>
+
+        <button id="btn" onclick="clickon()"><span id="btnn"></span></button>
+    </nav>
+
+   
+    <section>
+        <div class="menu-bar" id="menubar">
+        <ul id="ulist">
+            <li>Home</li>
+            <li>About Us</li>
+        </ul>
+        </div>
+    <div class="section1">
+        <img class="lamp" src="images/lamp.png" >
+        <img class="light" id="light" src="images/light.png" >
+        
+    </div>
+    <div class="section2">
+        <div class="bl">
+            Latest in Lighting
+        </div>
+        <div class="sl">
+            This is the first lamp from our company.We're making a huge collection of modern lamps in all categories from home use to office use.
+        </div>
+        <button class="cs-btn">Check All Collection</button>
+
+    </div>
+
+    
+   </section>
+
+ <script>
+    var  btn = document.getElementById('btn');
+    var  light= document.getElementById('light');
+    var  menubar= document.getElementById('menubar');
+    var  ulist= document.getElementById('ulist');
+
+    function clickon(){
+            btnn.classList.toggle("active");
+            light.classList.toggle("on");
+    }
+
+    function  menubtn(){
+        menubar.classList.toggle("menuafter");
+        ulist.classList.toggle("lichange");
+        
+    }
+</script>
+</body>
+</html>
